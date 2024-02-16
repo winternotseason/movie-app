@@ -1,0 +1,38 @@
+.rankitem {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #c7c7c7;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.rank-left {
+  display: flex;
+
+  img {
+    width: 12rem;
+  }
+}
+
+.rank-left-content {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5rem;
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color:#5076DB;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top:0;
+    margin-left: 1rem;
+    padding-top: 0.6rem;
+  }
+}
+
+.rank-right {
+  padding-right: 1.5rem;
+}
