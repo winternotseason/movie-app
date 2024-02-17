@@ -50,7 +50,7 @@ const RankItem = ({ data }) => {
           </div>
           <div className="title">
             <span>{dataList.movieName}</span>
-            <span>(wonka)</span>
+            <span className="eng-title">(eng)</span>
           </div>
         </div>
         <div className="sales">

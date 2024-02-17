@@ -7,13 +7,14 @@ $color-gray: #8a8a8a;
   padding-left: 2rem;
   padding-right: 2rem;
   h3 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: $color-gray;
     margin: 0;
   }
   .arrow-icon {
-    font-size: 10px;
+    font-size: 13px;
     color: $color-gray;
+    cursor: pointer;
   }
 }
