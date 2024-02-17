@@ -1,6 +1,6 @@
-export const PosterApiGet = async (movieName, releaseDts) => {
+export const KmdbApiGet = async (movieName, releaseDts) => {
   const params = {
-    ServiceKey: "MS5KP57V2KRQ377O6JB5",
+    ServiceKey: process.env.REACT_APP_KMDB_API_KEY,
     collection: "kmdb_new2",
     title: movieName,
     releaseDts:releaseDts

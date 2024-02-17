@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./Mobile.scss";
 import RankContainer from "./RankContainer";
-import { apiGet } from "../services/KobisApi";
+import { DailyBoxOfficeGet } from "../services/KobisApi";
 import SelectingDate from "./SelectingDate";
 
 const Mobile = () => {
@@ -20,7 +20,7 @@ const Mobile = () => {
 
   /* 영화 데이터 가져오기 */
   useEffect(() => {
-    apiGet(selectedDate).then((res) => {
+    DailyBoxOfficeGet(selectedDate).then((res) => {
       setSelectedDate(res.boxOfficeResult.showRange.slice(0, 8));
       setTitle(res.boxOfficeResult.boxofficeType);
       setData(res.boxOfficeResult.dailyBoxOfficeList);

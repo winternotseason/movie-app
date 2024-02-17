@@ -3,13 +3,13 @@ import "./Header.scss";
 const Header = () => {
   return (
     <Fragment>
-        <div className="header">
-          MOVIEINFO
-        </div>
+      <div className="header">
+        MOVIEINFO
+      </div>
       <div className="nav">
-        <ol>박스오피스</ol>
-        <ol>실시간예매율</ol>
-        <ol>주간예매율</ol>
+        <ol>일별 박스오피스</ol>
+        <ol>주간 박스오피스</ol>
+        <ol>주말 박스오피스</ol>
       </div>
     </Fragment>
   );

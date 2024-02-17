@@ -5,6 +5,7 @@ import { FaWonSign } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoCaretDownOutline, IoCaretUpOutline } from "react-icons/io5";
 import Poster from "./Poster";
+import TitleEng from "./TitleEng";
 
 const RankItem = ({ data }) => {
   const dataList = {
@@ -52,7 +53,9 @@ const RankItem = ({ data }) => {
           </div>
           <div className="title">
             <span>{dataList.movieName}</span>
-            <span className="eng-title">(eng)</span>
+            <span className="eng-title">
+              <TitleEng movieName={dataList.movieName} openDt={dataList.openDt} />
+            </span>
           </div>
         </div>
         <div className="sales">

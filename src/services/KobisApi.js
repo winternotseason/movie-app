@@ -1,6 +1,8 @@
-export const apiGet = async (date) => {
+/* 일간 박스오피스 */
+
+export const DailyBoxOfficeGet = async (date) => {
   const params = {
-    key: "a39792399960c2dfb0636829d6229ba9",
+    key: process.env.REACT_APP_KOBIS_API_KEY,
     targetDt: date,
     itemPerPage: 10,
   };
@@ -19,3 +21,6 @@ export const apiGet = async (date) => {
 
   return data;
 };
+
+/* 주간 박스오피스 */
+
