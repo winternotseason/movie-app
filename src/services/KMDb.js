@@ -1,8 +1,9 @@
-export const PosterApiGet = async (movieName) => {
+export const PosterApiGet = async (movieName, releaseDts) => {
   const params = {
     ServiceKey: "MS5KP57V2KRQ377O6JB5",
     collection: "kmdb_new2",
     title: movieName,
+    releaseDts:releaseDts
   };
 
   let query = Object.keys(params)

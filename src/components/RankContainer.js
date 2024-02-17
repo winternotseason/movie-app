@@ -5,7 +5,7 @@ import "./RankContainer.scss";
 const RankContainer = ({ data }) => {
   return (
     <div className="rankbox">
-      <ul>{data && data.map((movie) => <RankItem data={movie} />)}</ul>
+      <ul>{data && data.map((movie) => <RankItem key={movie.movieCd} data={movie} />)}</ul>
     </div>
   );
 };

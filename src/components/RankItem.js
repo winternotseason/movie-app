@@ -1,13 +1,12 @@
 import React from "react";
 import "./RankItem.scss";
-import poster from "../assets/dummy_poster.webp";
+
 import { FaWonSign } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoCaretDownOutline, IoCaretUpOutline } from "react-icons/io5";
 import Poster from "./Poster";
 
 const RankItem = ({ data }) => {
-  console.log(data)
   const dataList = {
     movieName: data.movieNm,
     rank: data.rank,
@@ -17,11 +16,12 @@ const RankItem = ({ data }) => {
     audiCnt: data.audiCnt,
     audiAcc: data.audiAcc,
     rankOldAndNew: data.rankOldAndNew,
+    openDt: data.openDt,
   };
   return (
     <div className="rankitem">
       <div className="poster">
-        <Poster movieName={dataList.movieName}/>
+        <Poster movieName={dataList.movieName} openDt={dataList.openDt} />
       </div>
       <div className="desc">
         <div className="rank-desc">
