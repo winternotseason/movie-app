@@ -1,24 +1,24 @@
-$color-purple : #490070;
+$color-purple: #490070;
 
 .rankitem {
   display: flex;
   align-items: center;
   border-top: 1px solid #c7c7c7;
   height: 13rem;
-  padding-left:3%;
+  padding-left: 3%;
   p {
     margin-top: 0;
     margin-bottom: 3px;
   }
   .acc {
-    color:rgb(158, 158, 158);
+    color: rgb(158, 158, 158);
   }
 }
 
 .poster {
   display: flex;
-  width:20%;
-  height:10.5rem;
+  width: 20%;
+  height: 10.5rem;
   img {
     max-width: 100%;
     max-height: 100%;
@@ -56,7 +56,6 @@ $color-purple : #490070;
     margin-left: 0.4rem;
     color: $color-purple;
   }
-
 }
 
 .audience {
@@ -85,25 +84,43 @@ $color-purple : #490070;
 .desc {
   display: flex;
   flex-direction: column;
-  margin-left:1rem;
-  width:60%;
+  margin-left: 1rem;
+  width: 60%;
 }
 
 .rank {
-  text-align: center;
-  line-height: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .number {
     width: 1rem;
     height: 1rem;
     color: white;
+    line-height: 0.9rem;
     background-color: #260049;
     font-size: 10px;
     border-radius: 4px;
+    text-align: center;
   }
+
   .change {
     color: #757575;
     font-size: 10px;
     margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    .change-icon {
+      position: relative;
+      top:1px;
+      font-size: 15px;
+      color: #ff5454;
+      .new {
+        font-size: 10px;
+        font-weight: 700;
+        color : orange;
+      }
+    }
   }
 }
 
@@ -114,6 +131,6 @@ $color-purple : #490070;
   margin-left: 0.4rem;
   line-height: 0.9rem;
   span {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
   }
 }
