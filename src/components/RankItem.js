@@ -38,7 +38,7 @@ const RankItem = ({ data }) => {
           </div>
           <span>
             <p>{parseInt(dataList.salesAmt).toLocaleString()}원</p>
-            <p>(누적 : {parseInt(dataList.salesAcc).toLocaleString()}원)</p>
+            <p className="acc">(누적 : {parseInt(dataList.salesAcc).toLocaleString()}원)</p>
           </span>
         </div>
         <div className="audience">
@@ -47,7 +47,7 @@ const RankItem = ({ data }) => {
           </div>
           <span>
             <p>{parseInt(dataList.audiCnt).toLocaleString()}명</p>
-            <p>(누적 : {parseInt(dataList.audiAcc).toLocaleString()}명)</p>
+            <p className="acc">(누적 : {parseInt(dataList.audiAcc).toLocaleString()}명)</p>
           </span>
         </div>
       </div>

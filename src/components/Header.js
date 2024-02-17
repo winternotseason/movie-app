@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <Fragment>
         <div className="header">
+          MOVIEINFO
         </div>
       <div className="nav">
         <ol>박스오피스</ol>

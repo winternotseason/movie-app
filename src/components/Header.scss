@@ -1,15 +1,21 @@
+$color-purple:#490070;
+
 .nav {
   width: 100%;
   padding: 0.7rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #490070;
+  background-color: $color-purple;
   color: white;
 }
 
 .header {
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 800;
+  color: $color-purple;
+  font-size: 22px;
 }
 
 ol {

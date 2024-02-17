@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { apiGet } from "../services/KobisApi";
+import React from "react";
 import RankItem from "./RankItem";
 import "./RankContainer.scss";
 
-const RankContainer = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    apiGet(20240214).then((res) => {
-      setData(res.boxOfficeResult.dailyBoxOfficeList);
-    });
-  }, []);
-  if(data){
-    console.log(data)
-  }
+const RankContainer = ({ data }) => {
   return (
     <div className="rankbox">
       <ul>{data && data.map((movie) => <RankItem data={movie} />)}</ul>
