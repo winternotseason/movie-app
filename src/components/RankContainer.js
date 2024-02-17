@@ -11,7 +11,9 @@ const RankContainer = () => {
       setData(res.boxOfficeResult.dailyBoxOfficeList);
     });
   }, []);
-
+  if(data){
+    console.log(data)
+  }
   return (
     <div className="rankbox">
       <ul>{data && data.map((movie) => <RankItem data={movie} />)}</ul>

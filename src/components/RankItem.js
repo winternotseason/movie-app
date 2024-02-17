@@ -1,22 +1,55 @@
 import React from "react";
 import "./RankItem.scss";
 import poster from "../assets/dummy_poster.webp";
+import { FaWonSign } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
 
 const RankItem = ({ data }) => {
-
+  const dataList = {
+    movieName: data.movieNm,
+    rank: data.rank,
+    rankInten: data.rankInten,
+    salesAmt: data.salesAmt,
+    salesAcc: data.salesAcc,
+    audiCnt: data.audiCnt,
+    audiAcc: data.audiAcc,
+  };
   return (
     <div className="rankitem">
-      <div className="rank-left">
+      <div className="poster">
         <img src={poster} alt="poster" />
-        <div className="rank-left-content">
-          <h3>{data.rank}</h3>
-          <p>{data.movieNm}</p>
-        </div>
       </div>
-      <div className="rank-right">
-        {" "}
-        <p>{data.audiCnt}</p>
-        <p>누적 : {data.audiAcc} </p>
+      <div className="desc">
+        <div className="rank-desc">
+          <div className="rank">
+            <span className="number">{dataList.rank}</span>
+            <span className="change">
+              {dataList.rankInten === "0" ? "-" : dataList.rankInten}
+            </span>
+          </div>
+          <div className="title">
+            <span>{dataList.movieName}</span>
+            <span>(wonka)</span>
+          </div>
+        </div>
+        <div className="sales">
+          <div className="sales-icon">
+            <FaWonSign />
+          </div>
+          <span>
+            <p>{parseInt(dataList.salesAmt).toLocaleString()}원</p>
+            <p>(누적 : {parseInt(dataList.salesAcc).toLocaleString()}원)</p>
+          </span>
+        </div>
+        <div className="audience">
+          <div className="audience-icon">
+            <IoPersonSharp />
+          </div>
+          <span>
+            <p>{parseInt(dataList.audiCnt).toLocaleString()}명</p>
+            <p>(누적 : {parseInt(dataList.audiAcc).toLocaleString()}명)</p>
+          </span>
+        </div>
       </div>
     </div>
   );

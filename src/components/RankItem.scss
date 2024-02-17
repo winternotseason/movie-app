@@ -1,38 +1,113 @@
 .rankitem {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid #c7c7c7;
-  height: 20rem;
-  padding: 1rem;
-}
-
-.rank-left {
-  display: flex;
-
-  img {
-    width: 12rem;
-  }
-}
-
-.rank-left-content {
-  display: flex;
-  justify-content: center;
-  margin-left: 1.5rem;
-  h3 {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 0;
-    color:#5076DB;
-  }
+  height: 13rem;
+  padding-left:5%;
+  padding-right: 5%;
   p {
-    font-size: 13px;
-    font-weight: 600;
-    margin-top:0;
-    margin-left: 1rem;
-    padding-top: 0.6rem;
+    margin-top: 0;
+    margin-bottom: 3px;
   }
 }
 
-.rank-right {
-  padding-right: 1.5rem;
+.poster {
+  display: flex;
+  width:20%;
+  height:10.5rem;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.rank-desc {
+  display: flex;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sales {
+  margin-top: 0.5rem;
+  display: flex;
+  .sales-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    color: #5076db;
+    font-size: 0.65rem;
+    border-radius: 50%;
+    border: 1px solid rgb(114, 114, 114);
+    margin-top: 1px;
+  }
+  span {
+    line-height: 1rem;
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.4rem;
+    color: #0c2763;
+  }
+}
+
+.audience {
+  display: flex;
+  margin-top: 0.5rem;
+  .audience-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    color: #5076db;
+    font-size: 0.65rem;
+    border-radius: 50%;
+    border: 1px solid rgb(114, 114, 114);
+  }
+  span {
+    line-height: 1rem;
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.4rem;
+    color: #0c2763;
+  }
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin-left:1rem;
+  width:60%;
+}
+
+.rank {
+  text-align: center;
+  line-height: 0.9rem;
+  .number {
+    width: 1rem;
+    height: 1rem;
+    color: white;
+    background-color: #0c2763;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+  .change {
+    color: #757575;
+    font-size: 10px;
+    margin-top: 0.2rem;
+  }
+}
+
+.title {
+  font-size: 12px;
+  color: #757575;
+  margin-left: 0.4rem;
+  line-height: 1rem;
+  span {
+    margin-bottom: 0.2rem;
+  }
 }
